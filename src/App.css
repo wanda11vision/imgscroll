@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+.main{
+  height: 200vh;
+  width: 100vw;
+  transition: 205s;
+  background-image: url("https://w0.peakpx.com/wallpaper/29/803/HD-wallpaper-message-in-a-bottle.jpg");
+  background-size: 100% 100%;
+}
+.m1{
+  height: 30%;
+  width: 20%;
+  border-radius: 10%;
+  background-image: url("https://i.pinimg.com/474x/fc/57/8b/fc578b392d04c6885249f36413da7cbf.jpg");
+  background-size: 100% 100%;
+  /* border: 2px solid red; */
+  position: fixed;
+}
