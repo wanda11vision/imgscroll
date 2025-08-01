@@ -1,119 +1,80 @@
-import React from 'react'
-import './App.css'
-import {motion, useScroll, useTransform} from 'framer-motion'
+import React from "react"; import "./App.css";
 
 function App() {
-  const {scrollY}=useScroll()
-  
-  const ymove=useTransform(scrollY,[100,200,300,400,500,600],[0,300,0,300,0,300])
-
-  const xmove =useTransform(scrollY,[100,200,300,400,500,600],[0,100,400,600,800,1100])
-  
   return (
-    <div className='main'>
-      <motion.div className='m1' style={{y:ymove,x:xmove}} >
-     
+    <div className="app">
+      {/* Navbar */}
+      <nav className="navbar">
+        <h1>MY Portfolio</h1>
+        <div className="n1">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
 
-      </motion.div>
-      </div>
-  )
+      {/* Name Section */}
+      <section className="pname">
+        <h2>Hi, I'm Frontend Dev 👋</h2>
+        <p>A Frontend Developer who loves building with React</p>
+        <div className="pnamebut">
+          <a href="#projects" className="btn1">View Projects</a>
+          <a href="#contact" className="btn2">Contact Me</a>
+        </div>
+      </section>
+
+
+
+
+
+      {/* About Section */}
+      <section id="about" className="section">
+        <h3>About Me</h3>
+        <p>I'm a passionate frontend developer skilled in HTML, CSS, JavaScript, and React. I enjoy making clean and responsive web interfaces.</p>
+        <h4>Skills:</h4>
+        <ul className="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+        </ul>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="section">
+        <h3>Projects</h3>
+        <div className="project">
+          <div className="pd1">
+            <h4>E-Commerce Website </h4>
+            <p>Developed a fully functional e-commerce website .</p>
+            <a href="https://wanda11vision.github.io/gwens">Live Demo</a> | <a href="https://github.com/wanda11vision/gwens">GitHub</a>
+          </div>
+          <div className="pd1">
+            <h4>A showcase website</h4>
+            <p>Created a website to showcase my skills and projects.</p>
+            <a href="  https://wanda11vision.github.io/stylox">Live Demo</a> | <a href="https://github.com/wanda11vision/stylox">GitHub</a>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="section">
+        <h3>Contact</h3>
+        <p>Email: yourmail@example.com</p>
+        <p>Mobile: +91 1234567890</p>
+        <p>GitHub:  https://github.com/wanda11vision</p>
+      </section>
+
+
+
+
+      {/* Footer */}
+      <footer className="footer">
+        <p>© 2025 MY Portfolio | Built with React</p>
+      </footer>
+    </div>
+
+  );
 }
 
-
-
-// import React from 'react'
-// import './App.css'
-// import {motion, useScroll, useTransform} from 'framer-motion'
-
-// function App() {
-//   const {scrollY}=useScroll()
-  
-//   const color=useTransform(scrollY,[100,500,1000],['red','green','blue'])
-
-//   const move =useTransform(scrollY,[0,200,400,600,1000],[0,300,0,300,0])
-//   return (
-//     <div className='main'>
-//       <motion.div className='m1' style={{backgroundColor:color,x:move}} >
-     
-        
-//       </motion.div>
-//       </div>
-//   )
-// }
-
-export default App
-
-
-
-
-
-// import React from 'react'
-// import './App.css'
-// import {motion} from 'framer-motion'
-
-// function App() {
-//   return (
-//     <div className='main'>
-//       <div>
-//         <motion.h1
-//         initial={{opacity:0,color:'white',x:50}}
-//         animate={{opacity:1,y:50}}
-//         transition={{duration:5}}
-//         >BetterUp</motion.h1>
-
-//         <motion.button
-//         initial={{opacity:0,x:500}}
-//         animate={{opacity:1,y:80}}
-//         transition={{duration:5}}
-//         >BetterUp Insights Report, Fall 2021</motion.button>
-        
-//         <motion.button
-//         initial={{opacity:0,x:800}}
-//         animate={{opacity:1,y:30}}
-//         transition={{duration:5}}
-//         >Request Demo</motion.button>
-      
-//       </div >
-
-//       <div className='m2'>
-//         <motion.h1
-//         initial={{opacity:0,color:'white',x:100,y:300}}
-//         animate={{opacity:1,y:100}}
-//         transition={{duration:5}}
-//         >A new kind of inclusive leadership for a new world of work</motion.h1>
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default App
-
-
-
-
-
-
-// import React, { useState } from 'react'
-// import {motion} from 'framer-motion'
-// import "./App.css"
-
-// function App() {
-//   let [a,seta]=useState(0)
-//   function chng(){
-//     seta(a+45)
-//   }
-//   return (
-//    <div>
-//     <motion.div className='box'
-//     initial={{rotate:0,x:0}}
-//     animate={{rotate:a,x:a}}
-//     whileHover={{rotate:a,x:a}}
-// >
-
-// </motion.div>
-// <button onClick={chng}>click</button>
-//    </div>
-//   )
-// }
-
-// export default App
+export default App;

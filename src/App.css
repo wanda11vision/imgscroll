@@ -1,22 +1,80 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing:border-box;
+.app {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
 }
 
-.main{
-  height: 200vh;
-  width: 100vw;
-  transition: 205s;
-  background-image: url("https://w0.peakpx.com/wallpaper/29/803/HD-wallpaper-message-in-a-bottle.jpg");
-  background-size: 100% 100%;
-}
-.m1{
-  height: 30%;
-  width: 20%;
-  border-radius: 10%;
-  background-image: url("https://i.pinimg.com/474x/fc/57/8b/fc578b392d04c6885249f36413da7cbf.jpg");
-  background-size: 100% 100%;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   /* border: 2px solid red; */
-  position: fixed;
+}
+
+.n1 a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #333;
+  
+}
+
+.pname {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #dbeafe, #ddd6fe);
+  /* border: 2px solid red; */
+}
+
+.pnamebut a {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn1 {
+  background-color: #2563eb;
+  color: white;
+}
+
+.btn2 {
+  background-color: #e5e7eb;
+  color: #333;
+}
+
+.section {
+  /* border: 2px solid green; */
+  padding: 2rem;
+  max-width: 60%;
+  margin: auto;
+}
+
+.skills li {
+  display: inline-block;
+  margin-right: 1rem;
+  /* border: 2px solid red; */
+}
+
+.project {
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pd1 {
+  /* border: 10px solid red; */
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #eee;
+  margin-top: 2rem;
 }
